@@ -1,9 +1,14 @@
-cat > login.html <<'EOF'
 <!doctype html>
-<html><head><title>Login</title></head><body>
-<form action="/login" method="post">
-  <input name="username" placeholder="username" />
-  <input name="password" type="password" placeholder="password" />
-  <button>Login</button>
-</form>
-</body></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <input name="username" placeholder="Username" required>
+        <input name="password" type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
